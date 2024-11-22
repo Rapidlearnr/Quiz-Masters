@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <!-- Login Form -->
+            <div class="form-container login-container">
+                <form id="login-form">
+                    <h2>Login</h2>
+                    <div class="input-group">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn"><a href="http://127.0.0.1:3000/quiz.html">Login In</a></button>
+                    <p class="form-footer">
+                        Don't have an account? <span id="signup-btn">Sign Up</span>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-container signup-container">
+                <form id="signup-form">
+                    <h2>Sign Up</h2>
+                    <div class="input-group">
+                        <input type="text" id="signup-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                    <p class="form-footer">
+                        Already have an account? <span id="login-btn">Log In</span>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

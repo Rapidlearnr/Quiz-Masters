@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 900px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer span {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Transitions for forms */
+.login-container {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.signup-container {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .forms-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+body{
+    
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background: url('contact.jpg')no-repeat;
+    background-size: cover;
+    background-position: center
+
+}
